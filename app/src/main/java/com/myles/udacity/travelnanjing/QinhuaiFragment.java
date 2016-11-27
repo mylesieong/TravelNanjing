@@ -25,9 +25,9 @@ public class QinhuaiFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.attraction_list, container, false);
 
         ArrayList<Attraction> attractions = new ArrayList<Attraction>();
-        attractions.add(new Attraction("father22", "əpə"));
-        attractions.add(new Attraction("mother22", "əṭa"));
-        attractions.add(new Attraction("son22", "angsi"));
+        //attractions.add(new Attraction("father22", "əpə"));
+        //attractions.add(new Attraction("mother22", "əṭa"));
+        //attractions.add(new Attraction("son22", "angsi"));
 
         AttractionAdapter itemsAdapter = new AttractionAdapter(this.getActivity(), attractions);
         ListView listView = (ListView)rootView.findViewById(R.id.list);

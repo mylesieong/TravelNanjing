@@ -5,27 +5,25 @@ package com.myles.udacity.travelnanjing;
  */
 
 public class Attraction {
-    String mName;
-    String mAddress;
+    private String mName;
+    private String mDesciption;
+    private int mImageResourceId;
 
-    public Attraction(String name, String address){
-        this.mAddress = address;
+    public Attraction(String name, String desciption, int imageResourceId){
         this.mName = name;
+        this.mDesciption = desciption;
+        this.mImageResourceId = imageResourceId;
     }
 
-    public void setName(String name){
-        this.mName = name;
-    }
+    public void setName(String name){ this.mName = name; }
 
-    public void setAddress(String address){
-        this.mAddress = address;
-    }
+    public void setDesciption(String desciption){this.mDesciption = desciption;}
 
-    public String getName(){
-        return this.mName;
-    }
+    public void setImageResourceId(int imageResourceId){ this.mImageResourceId = imageResourceId; }
 
-    public String getAddress(){
-        return this.mAddress;
-    }
+    public String getName(){ return this.mName;}
+
+    public String getDesciption(){ return this.mDesciption;}
+
+    public int getImageResourceId(){ return this.mImageResourceId;}
 }

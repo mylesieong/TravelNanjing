@@ -26,9 +26,7 @@ public class GulouFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.attraction_list, container, false);
 
         ArrayList<Attraction> attractions = new ArrayList<Attraction>();
-        attractions.add(new Attraction("father", "əpə"));
-        attractions.add(new Attraction("mother", "əṭa"));
-        attractions.add(new Attraction("son", "angsi"));
+        attractions.add(new Attraction("XF Book Store", "A special book store in Gulou district and also editor's favorite.", R.drawable.xf_thumbnail));
 
         AttractionAdapter itemsAdapter = new AttractionAdapter(this.getActivity(), attractions);
         ListView listView = (ListView)rootView.findViewById(R.id.list);
