@@ -26,4 +26,7 @@ public class Attraction {
     public String getDesciption(){ return this.mDesciption;}
 
     public int getImageResourceId(){ return this.mImageResourceId;}
+
+    @Override
+    public String toString(){ return "Attraction:"+this.mName+"/"+this.mDesciption+"/"+this.mImageResourceId; }
 }
