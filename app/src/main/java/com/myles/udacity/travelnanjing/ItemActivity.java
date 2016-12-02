@@ -22,12 +22,12 @@ public class ItemActivity extends AppCompatActivity {
         setContentView(R.layout.activity_item);
 
         Intent intent = this.getIntent();
-        ((TextView)this.findViewById(R.id.text_name)).setText(intent.getStringExtra("name"));
-        ((TextView)this.findViewById(R.id.text_description)).setText(intent.getStringExtra("description"));
-        ((TextView)this.findViewById(R.id.text_address)).setText(intent.getStringExtra("address"));
-        ((TextView)this.findViewById(R.id.text_phone)).setText(intent.getStringExtra("phone"));
-        ((TextView)this.findViewById(R.id.text_website)).setText(intent.getStringExtra("website"));
-        ((ImageView)this.findViewById(R.id.image)).setImageResource(intent.getIntExtra("image", 0));
+        ((TextView)this.findViewById(R.id.text_name)).setText(intent.getStringExtra(getString(R.string.intent_extra_name)));
+        ((TextView)this.findViewById(R.id.text_description)).setText(intent.getStringExtra(getString(R.string.intent_extra_description)));
+        ((TextView)this.findViewById(R.id.text_address)).setText(intent.getStringExtra(getString(R.string.intent_extra_address)));
+        ((TextView)this.findViewById(R.id.text_phone)).setText(intent.getStringExtra(getString(R.string.intent_extra_phone)));
+        ((TextView)this.findViewById(R.id.text_website)).setText(intent.getStringExtra(getString(R.string.intent_extra_website)));
+        ((ImageView)this.findViewById(R.id.image)).setImageResource(intent.getIntExtra(getString(R.string.intent_extra_image), 0));
 
     }
 

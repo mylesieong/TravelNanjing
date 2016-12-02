@@ -56,13 +56,13 @@ public class QinhuaiFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(QinhuaiFragment.this.getContext(), ItemActivity.class);
-                intent.putExtra("name", attractions.get(i).getName());
-                intent.putExtra("description", attractions.get(i).getDesciption());
-                intent.putExtra("address", attractions.get(i).getAddress());
-                intent.putExtra("phone", attractions.get(i).getPhone());
-                intent.putExtra("website", attractions.get(i).getWebsite());
-                intent.putExtra("thumbnail", attractions.get(i).getThumbnailResourceId());
-                intent.putExtra("image", attractions.get(i).getImageResourceId());
+                intent.putExtra(getString(R.string.intent_extra_name), attractions.get(i).getName());
+                intent.putExtra(getString(R.string.intent_extra_description), attractions.get(i).getDesciption());
+                intent.putExtra(getString(R.string.intent_extra_address), attractions.get(i).getAddress());
+                intent.putExtra(getString(R.string.intent_extra_phone), attractions.get(i).getPhone());
+                intent.putExtra(getString(R.string.intent_extra_website), attractions.get(i).getWebsite());
+                intent.putExtra(getString(R.string.intent_extra_thumbnail), attractions.get(i).getThumbnailResourceId());
+                intent.putExtra(getString(R.string.intent_extra_image), attractions.get(i).getImageResourceId());
                 startActivity(intent);
             }
         });

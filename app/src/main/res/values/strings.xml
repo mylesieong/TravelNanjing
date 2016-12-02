@@ -1,3 +1,18 @@
 <resources>
+
     <string name="app_name">TravelNanjing</string>
+
+    <string name="intent_extra_name">name</string>
+    <string name="intent_extra_description">description</string>
+    <string name="intent_extra_address">address</string>
+    <string name="intent_extra_phone">phone</string>
+    <string name="intent_extra_website">website</string>
+    <string name="intent_extra_thumbnail">thumbnail</string>
+    <string name="intent_extra_image">image</string>
+
+    <string name="tab_name_gulou_fragment">Gu Lou</string>
+    <string name="tab_name_qinhuai_fragment">Qin Huai</string>
+    <string name="tab_name_baixia_fragment">Bai Xia</string>
+    <string name="tab_name_xuanwu_fragment">Xuan Wu</string>
+
 </resources>

@@ -55,13 +55,13 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         if (position == 0) {
-            return "Gu Lou";
+            return mContext.getString(R.string.tab_name_gulou_fragment);
         } else if (position == 1) {
-            return "Qin Huai";
+            return mContext.getString(R.string.tab_name_qinhuai_fragment);
         }else if (position ==2){
-            return "Bai Xia";
+            return mContext.getString(R.string.tab_name_baixia_fragment);
         }else if (position==3) {
-            return "Xuan Wu";
+            return mContext.getString(R.string.tab_name_xuanwu_fragment);
         }else{
             return null;
         }
