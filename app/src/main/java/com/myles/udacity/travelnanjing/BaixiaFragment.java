@@ -26,8 +26,38 @@ public class BaixiaFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.attraction_list, container, false);
 
         final ArrayList<Attraction> attractions = new ArrayList<Attraction>();
-        attractions.add(new Attraction("XF Book Store", "A special book store in Gulou district and also editor's favorite.",
-                "Address: gulou distinct", "+86-21102244", "www.xfstore.cn", R.drawable.xf_thumbnail, R.drawable.xf));
+        attractions.add(new Attraction("Mingwalang",
+                "An offshoot from Nanjing’s busiest crossroads, Xinjiekou, the noisy, pungent and lively alleyway  forks over a wide array of cook-before-your-eyes delicacies to leave even a seasoned gourmet spoilt for choice.\n\n"+
+                "The roughly 200-meter road starts near Shigu Road with booths selling everything from grilled octopus skewers to fried chicken wings to egg pancakes.\n\n" +
+                "Sauntering further down, there are a number of sit-down restaurants, each enjoying a legendary reputation in Nanjing.\n\n" +
+                "YijiPidu Noodles serves massive bowls of noodles topped with sliced, deep-fried pig skin. Next to it, Bianrou Wonton boils  Fujian-style purse-shaped dumplings with crunchy fillings. LaotouGai Jiao Fan is the stop for rice devotees.\n\n" +
+                "South to Mingwalang is Daxianglu, a laid-back street-market with vendors pitching marinated duck necks or frying tofu skins from home stores.",
+                "Address: Mingwalang Food Street, between Shigu Road and Sanyuan Xiang, Baixia District",
+                "Phone: +86-",
+                "Website: http://baike.baidu.com/view/10298113.htm",
+                R.drawable.xf_thumbnail,
+                R.drawable.xf));
+
+        attractions.add(new Attraction("Wuchaomen Park",
+                "Every morning, retired locals practice tai chi, sing opera and walk backwards in circles in what was once the forbidden grounds of the Ming Palace.\n\n"+
+                "Inside the park stands Wumen, one of Nanjing’s few remaining palace gates, dating back to 1367. Visitors can climb the grey-bricked structure to experience a good view over Yudao to the south, the straight and tree-lined former imperial road.\n\n" +
+                "Wuchaomen is also ground zero for Nanjing’s saxophone association. Fans of the western instrument, mostly elderly retirees, gather here every day to chat and practice.",
+                "Address: 28 Yudao Road, Baixia District",
+                "Phone: +86-",
+                "Website: http://baike.baidu.com/view/599094.htm",
+                R.drawable.xf_thumbnail,
+                R.drawable.xf));
+
+        attractions.add(new Attraction("Jimmy’s",
+                "Hidden at the end of a food and drink complex on Shigu Road, this six-year-old sports bar plants a chunk of America in the heart of Nanjing.\n\n"+
+                "Owned by Tennessee-native Jimmy, this laid-back pub is a nightlife stronghold among Nanjing expats, serving domestic and imported beers, a sociable environment and possibly the best American-style pizza in town.\n\n" +
+                "Half a dozen TV sets are hung around the 100-square-metre brown-bricked space, broadcasting various sports games through international channels.\n\n" +
+                "Beer costs around RMB 25 (US$) per bottle or RMB 30 (US$4.8) on tap. A 12-inch pizza is about RMB 85 (US$13.6).",
+                "Address: 193 Shigu Road, Baixia District",
+                "Phone: +86 25 8679 2599",
+                "Website: http://jimmysnj.com/",
+                R.drawable.xf_thumbnail,
+                R.drawable.xf));
 
         AttractionAdapter itemsAdapter = new AttractionAdapter(this.getActivity(), attractions);
         ListView listView = (ListView)rootView.findViewById(R.id.list);
