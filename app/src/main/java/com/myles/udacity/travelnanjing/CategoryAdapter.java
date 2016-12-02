@@ -35,10 +35,13 @@ public class CategoryAdapter extends FragmentPagerAdapter {
             return new GulouFragment();
         } else if (position == 1) {
             return new QinhuaiFragment();
+        }else if (position == 2 ) {
+            return new BaixiaFragment();
+        }else if (position ==3 ){
+            return new XuanwuFragment();
         }else{
             return null;
         }
-
     }
 
     /**
@@ -46,7 +49,7 @@ public class CategoryAdapter extends FragmentPagerAdapter {
      */
     @Override
     public int getCount() {
-        return 2;
+        return 4;
     }
 
     @Override
@@ -55,6 +58,10 @@ public class CategoryAdapter extends FragmentPagerAdapter {
             return "Gu Lou";
         } else if (position == 1) {
             return "Qin Huai";
+        }else if (position ==2){
+            return "Bai Xia";
+        }else if (position==3) {
+            return "Xuan Wu";
         }else{
             return null;
         }

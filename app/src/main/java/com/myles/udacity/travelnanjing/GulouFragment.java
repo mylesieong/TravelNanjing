@@ -29,7 +29,8 @@ public class GulouFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.attraction_list, container, false);
 
         final ArrayList<Attraction> attractions = new ArrayList<Attraction>();
-        attractions.add(new Attraction("XF Book Store", "A special book store in Gulou district and also editor's favorite.", R.drawable.xf_thumbnail));
+        attractions.add(new Attraction("XF Book Store", "A special book store in Gulou district and also editor's favorite.",
+                "Address: gulou distinct", "+86-21102244", "www.xfstore.cn", R.drawable.xf_thumbnail, R.drawable.xf));
 
         AttractionAdapter itemsAdapter = new AttractionAdapter(this.getActivity(), attractions);
         ListView listView = (ListView)rootView.findViewById(R.id.list);
@@ -41,6 +42,10 @@ public class GulouFragment extends Fragment {
                 Intent intent = new Intent(GulouFragment.this.getContext(), ItemActivity.class);
                 intent.putExtra("name", attractions.get(i).getName());
                 intent.putExtra("description", attractions.get(i).getDesciption());
+                intent.putExtra("address", attractions.get(i).getAddress());
+                intent.putExtra("phone", attractions.get(i).getPhone());
+                intent.putExtra("website", attractions.get(i).getWebsite());
+                intent.putExtra("thumbnail", attractions.get(i).getThumbnailResourceId());
                 intent.putExtra("image", attractions.get(i).getImageResourceId());
                 startActivity(intent);
             }
