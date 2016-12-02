@@ -31,7 +31,7 @@ public class AttractionAdapter extends ArrayAdapter<Attraction> {
 
         ((TextView)listItemView.findViewById(R.id.text_name)).setText(this.getItem(position).getName());
         ((TextView)listItemView.findViewById(R.id.text_description)).setText(this.getItem(position).getDesciption());
-        ((ImageView)listItemView.findViewById(R.id.image)).setImageResource(this.getItem(position).getImageResourceId());
+        ((ImageView)listItemView.findViewById(R.id.image)).setImageResource(this.getItem(position).getThumbnailResourceId());
         ((ImageView)listItemView.findViewById(R.id.image)).setVisibility(View.VISIBLE);
 
         return listItemView;
