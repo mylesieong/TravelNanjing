@@ -26,8 +26,25 @@ public class XuanwuFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.attraction_list, container, false);
 
         final ArrayList<Attraction> attractions = new ArrayList<Attraction>();
-        attractions.add(new Attraction("XF Book Store", "A special book store in Gulou district and also editor's favorite.",
-                "Address: gulou distinct", "+86-21102244", "www.xfstore.cn", R.drawable.xf_thumbnail, R.drawable.xf));
+        attractions.add(new Attraction("Zuo Bar",
+                "Delivering top-notch cocktails and fine service in a cosy environment, the 50-square-metre bar is the place to go for a classy sip outside glitzy hotels.\n\n"+
+                "The menu comprises simple finger food and some 50 drinks choices with different bases of liquor, including whiskey, vodka, gin and tequila.\n\n" +
+                "Waist-coated Chinese bartenders, trained by the bar’s Japanese owner, mix concoctions in front of a large wall of alcohol which displays more than 100 bottles of firewater from around the world.",
+                "Address: 2/F, Building A2, 1912 compound, 54 North Taiping Road, Xuanwu District ",
+                "Phone: +86 25 8664 3100",
+                "Website: www.drinkmagazine.asia/2015/07/21/made-in-china-zuo-bar",
+                R.drawable.xf_thumbnail,
+                R.drawable.xf));
+
+        attractions.add(new Attraction("Xuanwu Lake Park",
+                "Just a few steps away from commercial thoroughfares, this former imperial lake garden ushers city dwellers from the urban hustle and bustle into a peaceful haven of weeping willows, arch bridges, paddle boats and visually stunning flowers.\n\n"+
+                "Whatever the season, the 4.4 square-kilometre park showcases a distinctive colour: pink cherry blossoms in spring, emerald lotus leaves in summer, golden ginkgos and red maples in autumn, and snow-covered pines in winter.\n\n" +
+                "Much of Nanjing’s downtown is built around this massive, smooth body of water. A casual stroll around the lake and through its five islands – all connected by bridges -- can take up to five hours.",
+                "Address: Various gates. The main one is Xuanwu Gate, near Metro Line 1 Xuanwumen Station",
+                "Phone: +86-",
+                "Website: baike.baidu.com/view/7964.htm",
+                R.drawable.xf_thumbnail,
+                R.drawable.xf));
 
         AttractionAdapter itemsAdapter = new AttractionAdapter(this.getActivity(), attractions);
         ListView listView = (ListView)rootView.findViewById(R.id.list);

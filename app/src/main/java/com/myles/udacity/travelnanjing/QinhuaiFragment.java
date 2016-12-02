@@ -27,8 +27,25 @@ public class QinhuaiFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.attraction_list, container, false);
 
         final ArrayList<Attraction> attractions = new ArrayList<Attraction>();
-        attractions.add(new Attraction("XF Book Store", "A special book store in Gulou district and also editor's favorite.",
-                "Address: gulou distinct", "+86-21102244", "www.xfstore.cn", R.drawable.xf_thumbnail, R.drawable.xf));
+        attractions.add(new Attraction("Qinhuai Renjia",
+                "Eating in this two-story venue is strange but fun. After ordering from a menu full of set combos, waiters bring in more than a dozen small dishes, each holding a different snack, until the table is heaving with porcelain pots.\n\n"+
+                "The star of the plate-driven feast is Qinhuai Eight Treasures (秦淮八绝), a dining concept featuring eight pairs of iconic eats that originated along the Qinhuai River. The 16 nibbles – half are dry dishes, others wet – are coupled by the restaurant to achieve the best gastronomic effect.\n\n" +
+                "Examples of the delicious duos are shredded tofu in chicken broth served with a sesame pancake, and pan-fried beef dumplings paired with beef soup.",
+                "Address: No. 128 Dashiba Road, Qinhuai District",
+                "Phone: +86 25 5221 1888",
+                "Website: www.mafengwo.cn/poi/4956.html",
+                R.drawable.xf_thumbnail,
+                R.drawable.xf));
+
+        attractions.add(new Attraction("Confucius Temple",
+                "In this tourist magnet also known as Fuzi Miao, eating is just as important as worshipping the great philosopher.\n\n"+
+                "Squeeze into these ever-humming lanes to spot small but reputable shops, specializing in the snacks that express the city’s history.\n\n" +
+                "Highlights include the dumplings in sweet red-bean soup from Lianhu Rice Cake Shop (莲湖糕团店), sesame pancakes from Qifangge (奇芳阁) and tofu jelly from Liufengju (六凤居).",
+                "Address: Fuzi Miao, Metro Line 1 SanshanJie Station, Qinhuai District",
+                "Phone: +86-",
+                "Website: baike.baidu.com/view/53816.htm",
+                R.drawable.xf_thumbnail,
+                R.drawable.xf));
 
 
         AttractionAdapter itemsAdapter = new AttractionAdapter(this.getActivity(), attractions);
