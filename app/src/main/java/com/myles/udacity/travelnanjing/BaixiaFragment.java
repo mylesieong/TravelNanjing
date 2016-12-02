@@ -35,8 +35,8 @@ public class BaixiaFragment extends Fragment {
                 "Address: Mingwalang Food Street, between Shigu Road and Sanyuan Xiang, Baixia District",
                 "Phone: +86-",
                 "Website: http://baike.baidu.com/view/10298113.htm",
-                R.drawable.xf_thumbnail,
-                R.drawable.xf));
+                R.drawable.mingwalang_thumbnail,
+                R.drawable.mingwalang));
 
         attractions.add(new Attraction("Wuchaomen Park",
                 "Every morning, retired locals practice tai chi, sing opera and walk backwards in circles in what was once the forbidden grounds of the Ming Palace.\n\n"+
@@ -45,8 +45,8 @@ public class BaixiaFragment extends Fragment {
                 "Address: 28 Yudao Road, Baixia District",
                 "Phone: +86-",
                 "Website: http://baike.baidu.com/view/599094.htm",
-                R.drawable.xf_thumbnail,
-                R.drawable.xf));
+                R.drawable.wuchaomen_park_thumbnail,
+                R.drawable.wuchaomen_park));
 
         attractions.add(new Attraction("Jimmy’s",
                 "Hidden at the end of a food and drink complex on Shigu Road, this six-year-old sports bar plants a chunk of America in the heart of Nanjing.\n\n"+
@@ -56,8 +56,8 @@ public class BaixiaFragment extends Fragment {
                 "Address: 193 Shigu Road, Baixia District",
                 "Phone: +86 25 8679 2599",
                 "Website: http://jimmysnj.com/",
-                R.drawable.xf_thumbnail,
-                R.drawable.xf));
+                R.drawable.jimmy_thumbnail,
+                R.drawable.jimmy));
 
         AttractionAdapter itemsAdapter = new AttractionAdapter(this.getActivity(), attractions);
         ListView listView = (ListView)rootView.findViewById(R.id.list);

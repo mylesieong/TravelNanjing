@@ -36,8 +36,8 @@ public class GulouFragment extends Fragment {
                 "Address: 173 Guangzhou Lu, Gulou District",
                 "Phone: +86 25 5188 8096",
                 "Website: https://site.douban.com/don_quixote",
-                R.drawable.xf_thumbnail,
-                R.drawable.xf));
+                R.drawable.sancho_panza_thumbnail,
+                R.drawable.sancho_panza));
 
         attractions.add(new Attraction("Florentina",
                 "It sounds surreal but it’s true: this cutely decorated house is the ultimate watering hole for Nanjing beer buffs.\n\n"+
@@ -46,8 +46,8 @@ public class GulouFragment extends Fragment {
                 "Address: 83 Shanghai Road, Gulou District",
                 "Phone: +86 186 0256 0788",
                 "Website: www.dianping.com/search/branch/5/0_18052902/g0",
-                R.drawable.xf_thumbnail,
-                R.drawable.xf));
+                R.drawable.florentina_thumbnail,
+                R.drawable.florentina));
 
         attractions.add(new Attraction("Prime Restaurant and Bar Lounge",
                 "Ascend cloud high for a posh experience of juicy steaks, wonderful wines, premium cigars and a panoramic view over the glittering downtown at this InterContinental bar.\n\n"+
@@ -56,8 +56,8 @@ public class GulouFragment extends Fragment {
                 "Address: 78/F, Intercontinental Nanjing, 1 Zhongyang Road, Gulou District",
                 "Phone: +86 25 8353 8888",
                 "Website: www.diningcity.cn/zh/nanjing/Prime_Restaurant_Bar_Lounge\n",
-                R.drawable.xf_thumbnail,
-                R.drawable.xf));
+                R.drawable.prime_restaurant_bar_lounge_thumbnail,
+                R.drawable.prime_restaurant_bar_lounge));
 
         attractions.add(new Attraction("Plum Garden",
                 "No restaurant in town cooks better Huaiyang dishes, a regional cuisine from Nanjing and neighboring cities, than the Plum Garden. The 150-seat space in Jinling Hotel is where the local government sets up banquets for impressing visiting officials.\n\n"+
@@ -66,8 +66,8 @@ public class GulouFragment extends Fragment {
                 "Address: Plum Garden (??), 2/F, Jinling Hotel, 2 Hanzhong Road, Gulou District ",
                 "Phone: +86 25 8471 1888 ext. 4204",
                 "Website: www.jinlinghotel.com",
-                R.drawable.xf_thumbnail,
-                R.drawable.xf));
+                R.drawable.plum_garden_thumbnail,
+                R.drawable.plum_garden));
 
         attractions.add(new Attraction("Nanjing Impressions",
                 "Almost every Nanjinger recommends this chained restaurant for authentic local fare, reasonable prices and unique ambience.\n\n"+
@@ -76,8 +76,8 @@ public class GulouFragment extends Fragment {
                 "Address: Multiple locations, Shiziqiao branch, No. 2 Shiziqiao, Gulou District",
                 "Phone: +86 25 8330 5777",
                 "Website: https://www.thebeijinger.com/directory/nanjing-impressions",
-                R.drawable.xf_thumbnail,
-                R.drawable.xf));
+                R.drawable.nanjing_impressions_thumbnail,
+                R.drawable.nanjing_impressions));
 
         AttractionAdapter itemsAdapter = new AttractionAdapter(this.getActivity(), attractions);
         ListView listView = (ListView)rootView.findViewById(R.id.list);

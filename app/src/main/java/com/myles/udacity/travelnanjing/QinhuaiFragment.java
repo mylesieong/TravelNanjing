@@ -34,8 +34,8 @@ public class QinhuaiFragment extends Fragment {
                 "Address: No. 128 Dashiba Road, Qinhuai District",
                 "Phone: +86 25 5221 1888",
                 "Website: www.mafengwo.cn/poi/4956.html",
-                R.drawable.xf_thumbnail,
-                R.drawable.xf));
+                R.drawable.qinhuairenjia_thumbnail,
+                R.drawable.qinhuairenjia));
 
         attractions.add(new Attraction("Confucius Temple",
                 "In this tourist magnet also known as Fuzi Miao, eating is just as important as worshipping the great philosopher.\n\n"+
@@ -44,8 +44,8 @@ public class QinhuaiFragment extends Fragment {
                 "Address: Fuzi Miao, Metro Line 1 SanshanJie Station, Qinhuai District",
                 "Phone: +86-",
                 "Website: baike.baidu.com/view/53816.htm",
-                R.drawable.xf_thumbnail,
-                R.drawable.xf));
+                R.drawable.confucius_temple_thumbnail,
+                R.drawable.confucius_temple));
 
 
         AttractionAdapter itemsAdapter = new AttractionAdapter(this.getActivity(), attractions);

@@ -33,8 +33,8 @@ public class XuanwuFragment extends Fragment {
                 "Address: 2/F, Building A2, 1912 compound, 54 North Taiping Road, Xuanwu District ",
                 "Phone: +86 25 8664 3100",
                 "Website: www.drinkmagazine.asia/2015/07/21/made-in-china-zuo-bar",
-                R.drawable.xf_thumbnail,
-                R.drawable.xf));
+                R.drawable.zuo_bar_thumbnail,
+                R.drawable.zuo_bar));
 
         attractions.add(new Attraction("Xuanwu Lake Park",
                 "Just a few steps away from commercial thoroughfares, this former imperial lake garden ushers city dwellers from the urban hustle and bustle into a peaceful haven of weeping willows, arch bridges, paddle boats and visually stunning flowers.\n\n"+
@@ -43,8 +43,8 @@ public class XuanwuFragment extends Fragment {
                 "Address: Various gates. The main one is Xuanwu Gate, near Metro Line 1 Xuanwumen Station",
                 "Phone: +86-",
                 "Website: baike.baidu.com/view/7964.htm",
-                R.drawable.xf_thumbnail,
-                R.drawable.xf));
+                R.drawable.xuanwu_lake_park_thumbnail,
+                R.drawable.xuanwu_lake_park));
 
         AttractionAdapter itemsAdapter = new AttractionAdapter(this.getActivity(), attractions);
         ListView listView = (ListView)rootView.findViewById(R.id.list);
